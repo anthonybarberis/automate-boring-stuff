@@ -24,7 +24,13 @@ def guessNumber():
 
 
 def collatz():
-    number = int(input('Choose any integer: '))
+
+    number = None
+    while type(number) != int:
+        try:
+            number = int(input('Choose any integer: '))
+        except:
+            print('That ain\'t no number')
     while number != 1:
         if number % 2 == 0:
             number = number // 2
