@@ -24,7 +24,6 @@ def guessNumber():
 
 
 def collatz():
-
     number = None
     while type(number) != int:
         try:
