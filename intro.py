@@ -8,5 +8,6 @@ def askName(owner):
 
 
 if __name__ == '__main__':
-    #print(askName('Anthony'))
+    func = askName('Anthony')
+    print(func)
     pass
