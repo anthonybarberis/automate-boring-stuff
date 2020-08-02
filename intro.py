@@ -1,6 +1,5 @@
 def askName(owner):
     name = input('What is your name?')
-
     if name == owner:
         return 'Hello, ' + name
     else:
@@ -8,5 +7,5 @@ def askName(owner):
 
 
 if __name__ == '__main__':
-    print(askName('Anthony'))
+    # print(askName('Anthony'))
     pass
