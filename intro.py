@@ -23,7 +23,18 @@ def guessNumber():
             print(f'You got it in {guesses} guesses!')
 
 
+def collatz():
+    number = int(input('Choose any integer: '))
+    while number != 1:
+        if number % 2 == 0:
+            number = number // 2
+        elif number % 2 != 0:
+            number = number * 3 + 1
+        print(number)
+
+
 if __name__ == '__main__':
     # print(askName('Anthony'))
     # guessNumber()
+    # collatz()
     pass
