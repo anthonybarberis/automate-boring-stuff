@@ -6,4 +6,7 @@ def askName(owner):
     else:
         print(f'{name}, what are you doing on {owner}\'s computer?')
 
-askName('Anthony')
+
+if __name__ == '__main__':
+    #askName('Anthony')
+    pass
