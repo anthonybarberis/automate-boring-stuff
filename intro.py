@@ -47,9 +47,28 @@ def printGroceryList():
     print(groceryList)
 
 
+def rotateListImage():
+    import copy
+    grid = [['.', '.', '.', '.', '.', '.'],
+            ['.', 'O', 'O', '.', '.', '.'],
+            ['O', 'O', 'O', 'O', '.', '.'],
+            ['O', 'O', 'O', 'O', 'O', '.'],
+            ['.', 'O', 'O', 'O', 'O', 'O'],
+            ['O', 'O', 'O', 'O', 'O', '.'],
+            ['O', 'O', 'O', 'O', '.', '.'],
+            ['.', 'O', 'O', '.', '.', '.'],
+            ['.', '.', '.', '.', '.', '.']]
+    for column in range(len(grid[0])):
+        rowPrint = ''
+        for row in range(len(grid)):
+            rowPrint += grid[len(grid)-row-1][column]
+        print(rowPrint)
+
+
 if __name__ == '__main__':
     # print(askName('Anthony'))
     # guessNumber()
     # collatz()
-    #printGroceryList()
+    # printGroceryList()
+    # rotateListImage()
     pass
