@@ -42,8 +42,8 @@ def printGroceryList():
     groceries = ['apples', 'bananas', 'corn dogs', 'cheese', 'coffee']
     groceryList = ''
     for each in groceries[:-1]:
-        groceryList = groceryList + f'{each}, '
-    groceryList = groceryList + f'and {groceries[-1]}'
+        groceryList += f'{each}, '
+    groceryList += f'and {groceries[-1]}'
     print(groceryList)
 
 
