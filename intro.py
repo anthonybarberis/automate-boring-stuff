@@ -38,8 +38,18 @@ def collatz():
         print(number)
 
 
+def printGroceryList():
+    groceries = ['apples', 'bananas', 'corn dogs', 'cheese', 'coffee']
+    groceryList = ''
+    for each in groceries[:-1]:
+        groceryList = groceryList + f'{each}, '
+    groceryList = groceryList + f'and {groceries[-1]}'
+    print(groceryList)
+
+
 if __name__ == '__main__':
     # print(askName('Anthony'))
     # guessNumber()
     # collatz()
+    #printGroceryList()
     pass
