@@ -65,10 +65,35 @@ def rotateListImage():
         print(rowPrint)
 
 
+def dictPlay():
+    people = [
+        {
+            'name': 'Anthony',
+            'age': 37,
+            'color': 'blue'
+        },
+        {
+            'name': 'Katie',
+            'age': 31,
+            'color': 'orange'
+        }
+    ]
+    # print(people[0]['name'])
+    # print('Katie' in people[1].values())
+    hitCount = 0
+    personName = 'Jimmy'
+    for person in people:
+        if personName in person.values():
+            hitCount += 1
+            print(f'{personName} is at index {people.index(person)}')
+    if hitCount == 0:
+        print(f'{personName} not found')
+
 if __name__ == '__main__':
     # print(askName('Anthony'))
     # guessNumber()
     # collatz()
     # printGroceryList()
     # rotateListImage()
+    #dictPlay()
     pass
